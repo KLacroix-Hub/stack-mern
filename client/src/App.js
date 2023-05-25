@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://socket-io-test.onrender.com")
+    fetch("https://server-stack-mern.onrender.com")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   },[]);
